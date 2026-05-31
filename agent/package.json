@@ -1,0 +1,11 @@
+{
+  "name": "kore-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent d'automatisation pour la boutique Shopify KORE",
+  "scripts": {
+    "audit": "node index.js audit",
+    "start": "node index.js"
+  }
+}

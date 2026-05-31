@@ -1,0 +1,38 @@
+[
+  {
+    "match": "lin",
+    "title": "Chemise en Lin Homme — Été",
+    "body_html": "<p>Légère, respirante et intemporelle, la Chemise en Lin KORE est la pièce idéale des beaux jours. Sa matière naturelle laisse circuler l'air pour vous garder au frais, tandis que sa coupe ajustée habille votre silhouette avec élégance.</p><ul><li>🌿 <strong>Matière :</strong> [100 % lin — à préciser]</li><li>✂️ <strong>Coupe :</strong> ajustée, tombé fluide</li><li>🧼 <strong>Entretien :</strong> lavage à 30°, repassage doux</li><li>🚚 <strong>Livraison offerte dès 80€ · Retours 30 jours</strong></li></ul>",
+    "seo": {
+      "title": "Chemise en Lin Homme Été | KORE",
+      "description": "Chemise en lin homme légère et respirante, coupe élégante pour l'été. Livraison offerte dès 80€, retours 30 jours."
+    }
+  },
+  {
+    "match": "lunettes",
+    "title": "Lunettes de Soleil Rétro",
+    "body_html": "<p>Un style affirmé, une allure intemporelle. Les Lunettes Rétro KORE reprennent les codes des années 90 avec une monture épurée qui sublime tous les visages. Verres traités anti-UV pour protéger vos yeux avec style.</p><ul><li>🕶️ <strong>Protection :</strong> verres [UV400 — à confirmer]</li><li>👤 <strong>Mixte :</strong> homme &amp; femme</li><li>🚚 <strong>Livraison offerte dès 80€ · Retours 30 jours</strong></li></ul>",
+    "seo": {
+      "title": "Lunettes de Soleil Rétro | KORE",
+      "description": "Lunettes de soleil rétro mixtes, verres anti-UV, style années 90. Livraison offerte dès 80€."
+    }
+  },
+  {
+    "match": "robe",
+    "title": "Robe Fleurie Vintage — Été",
+    "body_html": "<p>Romantique et lumineuse, la Robe Fleurie KORE capture tout l'esprit de l'été. Son imprimé floral délicat et sa coupe fluide flattent la silhouette et se portent du matin au soir.</p><ul><li>🌸 <strong>Imprimé :</strong> floral all-over</li><li>✂️ <strong>Coupe :</strong> taille marquée, jupe évasée</li><li>🧼 <strong>Entretien :</strong> lavage à 30°</li><li>🚚 <strong>Livraison offerte dès 80€ · Retours 30 jours</strong></li></ul>",
+    "seo": {
+      "title": "Robe Fleurie Vintage Été | KORE",
+      "description": "Robe fleurie vintage, coupe fluide et imprimé floral pour l'été. Plusieurs coloris. Livraison offerte dès 80€."
+    }
+  },
+  {
+    "match": "t-shirt",
+    "title": "T-Shirt Oversize Motif Montagne",
+    "body_html": "<p>Le confort sans compromis sur le style. Le T-Shirt Oversize KORE associe une coupe ample tendance à un coton doux et résistant. Son motif montagne minimaliste apporte la touche graphique parfaite.</p><ul><li>👕 <strong>Matière :</strong> [100 % coton — à préciser]</li><li>✂️ <strong>Coupe :</strong> oversize, épaules tombantes</li><li>🧼 <strong>Entretien :</strong> lavage à 30°, pas de sèche-linge</li><li>🚚 <strong>Livraison offerte dès 80€ · Retours 30 jours</strong></li></ul>",
+    "seo": {
+      "title": "T-Shirt Oversize Motif Montagne | KORE",
+      "description": "T-shirt oversize en coton, motif montagne minimaliste, coupe streetwear. Livraison offerte dès 80€."
+    }
+  }
+]
