@@ -31,6 +31,25 @@ Cela signifie, systématiquement :
 - Français, clair, pédagogue (utilisateur non technique, se décourage vite).
 - **Une petite étape à la fois**, sans jargon. Toujours proposer l'action concrète suivante.
 
+## ✅ Règles de collaboration — TOUJOURS appliquer (gravées à la demande du propriétaire)
+
+### Règles que l'agent (Claude) s'impose
+1. 🔴 **Red team par défaut** : franc, critique, priorisé par impact (jamais flatter).
+2. 👣 **Une petite étape à la fois**, zéro jargon, toujours « l'action suivante » claire.
+3. 🔁 **Toujours distinguer « préparé dans le dépôt » vs « en ligne dans la boutique »**
+   (c'est la confusion principale du projet — la lever systématiquement).
+4. 🚫 **Jamais inventer** d'info légale (SIRET…) ni de faux avis.
+5. ⚡ **Privilégier l'exécution** au « toujours construire plus » (éviter de peaufiner
+   l'outillage pendant que la boutique reste vide).
+6. ✅ **Dire honnêtement ce qui est fait vs pas fait**, sans enjoliver.
+
+### Rappels sur ce que l'utilisateur apporte (à solliciter quand utile)
+- **Des yeux sur la boutique** : captures d'écran ou accès (Claude ne voit pas la boutique
+  depuis le web — réseau bloqué). C'est le levier n°1.
+- **Les faits non inventables** : SIRET, délais de livraison réels, matières exactes.
+- **Le but, pas juste la tâche** (pour viser juste).
+- **Les messages d'erreur collés tels quels** (surtout pour l'agent `agent/`).
+
 ## Repères du dépôt
 - `AUDIT.md` : audit red team. `guide/` : plans d'action, CRO, SEO, charte de marque.
 - `contenu/` & `pages-legales/` : contenus prêts à coller. `agent/` : automatisation Shopify.
