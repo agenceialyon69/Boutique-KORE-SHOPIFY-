@@ -4,7 +4,7 @@
 > Champs entre `[ ]` = à remplir. Supprime les lignes qui ne s'appliquent pas à ton statut.
 
 ## Éditeur du site
-Le site **KORE** (ci-après « le Site »), accessible à l'adresse [https://www.ton-domaine.com],
+Le site **KORE** (ci-après « le Site »), accessible à l'adresse https://www.korewear.fr,
 est édité par :
 
 - **Nom / Raison sociale :** Aïcha DIALLO — Entrepreneur individuel (micro-entreprise)
@@ -12,7 +12,7 @@ est édité par :
 - **Adresse du siège :** [Adresse complète — à compléter]
 - **SIRET :** 98975496500014 — **SIREN :** 989754965
 - **N° de TVA intracommunautaire :** Non applicable — TVA non applicable, art. 293 B du CGI (franchise en base)
-- **E-mail :** [contact@ton-domaine.com — à compléter]
+- **E-mail :** contact@korewear.fr
 - **Téléphone :** [optionnel]
 
 ## Directeur de la publication

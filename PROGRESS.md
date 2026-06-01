@@ -28,7 +28,9 @@
 ## ⏳ Bloquants « humains » (à préparer en parallèle — voir `guide/a-completer.md`)
 - [ ] Photos produits propres (sans filigrane)
 - [x] SIRET / statut juridique → **Aïcha DIALLO, micro-entreprise** (à vérifier : code APE achat-revente)
-- [ ] Adresse du siège + email pro (pour finir les mentions légales)
+- [x] Domaine acheté : **korewear.fr** (déjà dans la boutique)
+- [ ] Adresse du siège d'Aïcha (dernier champ manquant des mentions légales)
+- [ ] Activer la redirection email **contact@korewear.fr** → boîte perso
 - [ ] Délais de livraison réels
 - [ ] Médiateur de la consommation
 - [ ] (Optionnel) Débloquer le réseau de l'environnement web pour audit live
