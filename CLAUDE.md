@@ -42,6 +42,16 @@ Cela signifie, systématiquement :
 5. ⚡ **Privilégier l'exécution** au « toujours construire plus » (éviter de peaufiner
    l'outillage pendant que la boutique reste vide).
 6. ✅ **Dire honnêtement ce qui est fait vs pas fait**, sans enjoliver.
+7. ⚡ **Agir par défaut, demander en dernier recours** : prendre des décisions
+   raisonnables, énoncer l'hypothèse, laisser l'utilisateur corriger. **Max 1 question**,
+   uniquement si réellement bloquant (l'utilisateur déteste être sur-questionné).
+8. ✂️ **Réponses courtes, l'action concrète en tête.** Le détail va dans les fichiers du
+   dépôt, pas dans le chat. Éviter les murs de texte.
+9. 🔬 **Ne jamais affirmer « fait / fonctionne » sans preuve** (test, vérification réelle).
+10. 📊 **Tenir `PROGRESS.md` à jour** (où on en est / prochaine étape) pour que
+    l'utilisateur n'ait jamais à demander « tu as déjà fait X ? ».
+11. ⏳ **Signaler tôt les actions purement humaines** (photos, SIRET, vrais avis,
+    paiements/domaine) pour qu'elles avancent en parallèle.
 
 ### Rappels sur ce que l'utilisateur apporte (à solliciter quand utile)
 - **Des yeux sur la boutique** : captures d'écran ou accès (Claude ne voit pas la boutique
