@@ -27,7 +27,8 @@
 
 ## ⏳ Bloquants « humains » (à préparer en parallèle — voir `guide/a-completer.md`)
 - [ ] Photos produits propres (sans filigrane)
-- [ ] SIRET / statut juridique + email pro
+- [x] SIRET / statut juridique → **Aïcha DIALLO, micro-entreprise** (à vérifier : code APE achat-revente)
+- [ ] Adresse du siège + email pro (pour finir les mentions légales)
 - [ ] Délais de livraison réels
 - [ ] Médiateur de la consommation
 - [ ] (Optionnel) Débloquer le réseau de l'environnement web pour audit live
@@ -43,5 +44,8 @@
 - **Niche : activewear féminin** (legging/brassière) — nom KORE = « core/corps ».
 - **Stratégie : 1 produit héros d'abord** (legging sculptant seamless), pas un catalogue.
 - **Fournisseur : stock UE (BigBuy/CJ entrepôt UE) pour démarrer** ; Printify/brandé **après** avoir un gagnant prouvé (séquence, pas parallèle).
-- Statut juridique : **pas encore décidé** → pages légales en modèle générique.
+- **Entité légale : micro-entreprise d'Aïcha DIALLO** (SIRET 98975496500014). Elle est
+  l'exploitante et pilotera la boutique au quotidien. Mentions légales remplies à son nom.
+  ⚠️ À vérifier : code APE couvre l'achat-revente + question juridique sur le titre de séjour
+  du conjoint (permanence Forum Réfugiés / Cimade).
 - Priorité : **lancer d'abord**, monter une équipe d'agents plus tard.

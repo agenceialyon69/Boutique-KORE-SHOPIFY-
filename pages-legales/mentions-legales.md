@@ -7,18 +7,16 @@
 Le site **KORE** (ci-après « le Site »), accessible à l'adresse [https://www.ton-domaine.com],
 est édité par :
 
-- **Nom / Raison sociale :** [Nom de l'entreprise ou Prénom NOM si auto-entrepreneur]
-- **Statut juridique :** [Auto-entrepreneur / EI / SASU / SARL …]
-- **Adresse du siège :** [Adresse complète]
-- **SIREN / SIRET :** [Numéro]
-- **N° de TVA intracommunautaire :** [FR… — ou « Non applicable, TVA non applicable, art. 293 B du CGI » pour la franchise en base]
-- **Capital social :** [Montant — pour les sociétés uniquement]
-- **RCS / Ville d'immatriculation :** [— pour les sociétés]
-- **E-mail :** [contact@ton-domaine.com]
+- **Nom / Raison sociale :** Aïcha DIALLO — Entrepreneur individuel (micro-entreprise)
+- **Statut juridique :** Entreprise individuelle (micro-entrepreneur)
+- **Adresse du siège :** [Adresse complète — à compléter]
+- **SIRET :** 98975496500014 — **SIREN :** 989754965
+- **N° de TVA intracommunautaire :** Non applicable — TVA non applicable, art. 293 B du CGI (franchise en base)
+- **E-mail :** [contact@ton-domaine.com — à compléter]
 - **Téléphone :** [optionnel]
 
 ## Directeur de la publication
-[Prénom NOM], en qualité de [gérant / président / entrepreneur individuel].
+Aïcha DIALLO, en qualité d'entrepreneur individuel.
 
 ## Hébergeur
 Le Site est hébergé par **Shopify International Limited**,
@@ -40,4 +38,4 @@ gratuitement à un médiateur de la consommation : [Nom et coordonnées du médi
 souscrire, ex. CM2C, Medicys…].
 
 ## Dernière mise à jour
-[JJ/MM/AAAA]
+01/06/2026
