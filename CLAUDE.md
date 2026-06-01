@@ -28,7 +28,8 @@ Cela signifie, systématiquement :
 - Ne jamais inventer : SIRET / infos légales, faux avis. Ne pas fabriquer de fausses preuves.
 
 ## Style de réponse attendu
-- Français, clair, pédagogue (utilisateur non technique, se décourage vite).
+- Français, clair, pédagogue (utilisateur non technique mais **persévérant et motivé** — ne
+  PAS le traiter comme quelqu'un qui se décourage ; il tient sur la durée).
 - **Une petite étape à la fois**, sans jargon. Toujours proposer l'action concrète suivante.
 
 ## ✅ Règles de collaboration — TOUJOURS appliquer (gravées à la demande du propriétaire)
