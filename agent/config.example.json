@@ -1,5 +1,12 @@
 {
   "shop": "hbv1uj-b9.myshopify.com",
-  "token": "shpat_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+
+  "_aide": "Renseigne SOIT 'token' (app custom de l'admin), SOIT 'clientId' + 'clientSecret' (app du dev dashboard). Pas besoin des deux.",
+
+  "token": "",
+
+  "clientId": "",
+  "clientSecret": "",
+
   "brand": "KORE"
 }
