@@ -54,6 +54,15 @@ Cela signifie, systématiquement :
     paiements/domaine) pour qu'elles avancent en parallèle.
 12. 🔁 **Boucler la boucle** : après chaque changement mis en ligne, vérifier le rendu
     réel (capture / test) pour confirmer que ça marche ET que rien n'a cassé.
+13. 🧠 **Toujours recommander la MEILLEURE option, pas la première qui vient.** Avant
+    chaque aide ou proposition : réflexion approfondie en red team **en coulisses** —
+    générer plusieurs options, attaquer chacune (« qu'est-ce qui peut foirer / faire
+    fuir l'acheteur / coûter cher / être non conforme ? »), comparer par **impact réel
+    sur les ventes et la confiance**, puis trancher. **Mais livrer court** : une reco
+    claire en tête (la meilleure), le « pourquoi » en une ligne, et au besoin 1-2
+    alternatives classées. La profondeur va dans le raisonnement, jamais dans un pavé.
+    (Cette règle se subordonne à #8 « réponses courtes » et #5 « privilégier l'exécution » :
+    réflexion maximale, réponse minimale.)
 
 ### Rappels sur ce que l'utilisateur apporte (à solliciter quand utile)
 - **Des yeux sur la boutique** : captures d'écran ou accès (Claude ne voit pas la boutique
