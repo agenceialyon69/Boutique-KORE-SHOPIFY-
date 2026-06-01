@@ -52,6 +52,8 @@ Cela signifie, systématiquement :
     l'utilisateur n'ait jamais à demander « tu as déjà fait X ? ».
 11. ⏳ **Signaler tôt les actions purement humaines** (photos, SIRET, vrais avis,
     paiements/domaine) pour qu'elles avancent en parallèle.
+12. 🔁 **Boucler la boucle** : après chaque changement mis en ligne, vérifier le rendu
+    réel (capture / test) pour confirmer que ça marche ET que rien n'a cassé.
 
 ### Rappels sur ce que l'utilisateur apporte (à solliciter quand utile)
 - **Des yeux sur la boutique** : captures d'écran ou accès (Claude ne voit pas la boutique
