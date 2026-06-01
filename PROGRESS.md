@@ -1,7 +1,7 @@
 # 📊 PROGRESS — Boutique KORE
 
 > Tableau de bord vivant. Mis à jour à chaque session par Claude.
-> Dernière mise à jour : 2026-06-01
+> Dernière mise à jour : 2026-06-01 (pivot niche activewear + produit héros)
 
 ## 🟢 Fait (préparé dans le dépôt)
 - [x] Audit red team complet (`AUDIT.md`)
@@ -11,6 +11,7 @@
 - [x] Blocs HTML (guide des tailles, réassurance)
 - [x] Agent d'automatisation Shopify (`agent/`) — code testé (syntaxe/JSON/markdown)
 - [x] Règles permanentes gravées (`CLAUDE.md`)
+- [x] **Stratégie de lancement = 1 produit héros** : fiche prête à coller (`contenu/produit-hero.md`)
 
 ## 🔴 EN LIGNE dans la vraie boutique (ce que voient les clients)
 - [x] 1 produit : « ŌKEI » retiré du titre (fait à la main par le propriétaire)
@@ -31,7 +32,16 @@
 - [ ] Médiateur de la consommation
 - [ ] (Optionnel) Débloquer le réseau de l'environnement web pour audit live
 
+## 🚀 Lancement express (chantier prioritaire — revenu rapide)
+1. [ ] Sourcer le **legging seamless** sur **BigBuy (stock UE)** → compo + mesures + prix
+2. [ ] Importer dans Shopify, **images propres uniquement**, coller la fiche (`contenu/produit-hero.md`)
+3. [ ] **Publier** (passer de « préparé » à « EN LIGNE »)
+4. [ ] Poster la **1ʳᵉ vidéo TikTok** (lien en bio)
+
 ## 🧠 Décisions actées
 - Marque retenue : **KORE** (supprimer « ŌKEI »).
+- **Niche : activewear féminin** (legging/brassière) — nom KORE = « core/corps ».
+- **Stratégie : 1 produit héros d'abord** (legging sculptant seamless), pas un catalogue.
+- **Fournisseur : stock UE (BigBuy/CJ entrepôt UE) pour démarrer** ; Printify/brandé **après** avoir un gagnant prouvé (séquence, pas parallèle).
 - Statut juridique : **pas encore décidé** → pages légales en modèle générique.
 - Priorité : **lancer d'abord**, monter une équipe d'agents plus tard.
