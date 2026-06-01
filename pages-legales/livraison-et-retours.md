@@ -5,18 +5,15 @@
 ## 🚚 Livraison
 
 ### Frais de livraison
-- **Offerte dès 80€** d'achat en France métropolitaine.
-- En dessous de 80€ : **[X,XX] €**.
-- [Zones internationales / DOM-TOM : tarifs à préciser ou « non desservi ».]
+- **Livraison offerte** sur toutes les commandes (France métropolitaine et UE proche).
 
 ### Délais
-- **Préparation :** [1 à 2] jours ouvrés après la commande.
-- **Acheminement :** [3 à 7] jours ouvrés en France métropolitaine.
-- **Transporteur(s) :** [Colissimo / Mondial Relay / Chronopost — à préciser].
+- **Préparation :** 1 à 2 jours ouvrés après la commande.
+- **Acheminement :** **5 à 10 jours ouvrés**.
+- Un **numéro de suivi** est fourni dès l'expédition.
 
-> ⚠️ Sois honnête sur les délais. Si tes produits viennent d'un fournisseur lointain,
-> indique le **vrai délai** (ex. 7 à 15 jours). Annoncer « livraison rapide » puis
-> livrer en 3 semaines = avis négatifs et litiges PayPal/Stripe garantis.
+> Les délais sont annoncés honnêtement. En cas de forte affluence, un léger
+> délai supplémentaire peut s'appliquer — nous vous tenons informé(e).
 
 ### Suivi
 Un numéro de suivi est envoyé par e-mail dès l'expédition de la commande.
@@ -26,15 +23,15 @@ Un numéro de suivi est envoyé par e-mail dès l'expédition de la commande.
 ## 🔄 Retours & remboursements
 
 ### Droit de rétractation
-Vous disposez de **14 jours** (légal) — [étendus à **30 jours** par KORE, si confirmé] —
-à compter de la réception pour retourner un article, sans justification.
+Vous disposez de **14 jours** à compter de la réception pour retourner un article,
+sans justification.
 
 ### Conditions de retour
 - Article **neuf, non porté, non lavé**, avec étiquettes et emballage d'origine.
-- [Frais de retour à la charge du client / offerts — à préciser.]
+- Les **frais de retour** sont à la charge du client.
 
 ### Procédure
-1. Contactez-nous à **[contact@ton-domaine.com]** en indiquant votre n° de commande.
+1. Contactez-nous à **contact@korewear.fr** en indiquant votre n° de commande.
 2. Nous vous communiquons l'adresse et la marche à suivre.
 3. Renvoyez le colis sous [X] jours.
 
@@ -47,4 +44,4 @@ En cas d'article défectueux ou non conforme, contactez-nous : retour et rembour
 (ou échange) **à nos frais**, au titre de la garantie légale de conformité.
 
 ## Dernière mise à jour
-[JJ/MM/AAAA]
+01/06/2026
