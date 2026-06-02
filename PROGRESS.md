@@ -17,8 +17,11 @@
 - [x] 1 produit : « ŌKEI » retiré du titre (fait à la main par le propriétaire)
 - [x] **Legging héros importé + fiche complète** (description, prix 34,90 €)
 - [x] **Paiement Shopify Payments ACTIVÉ** (Shop Pay, Visa, Mastercard) — versements
-  vers compte Boursorama EUR (⚠️ vérifier : compte au nom d'Aïcha)
-- [ ] **Pages légales + footer = PAS encore en ligne** ← reste à coller
+  vers compte Boursorama EUR **d'Aïcha** (confirmé)
+- [x] **Pages légales créées + liées au footer** (mentions, CGV, confidentialité, livraison,
+  à propos, contact, FAQ) — vérifiées, liens OK
+- [ ] **Bannière/thème optimisé** (à faire sur PC — non bloquant)
+- [ ] **Trafic = 1ʳᵉ vidéo TikTok** (rôle d'Aïcha) ← le vrai levier restant
 
 ## ▶️ Prochaines étapes (ordre d'impact red team)
 1. [ ] **Marque** — virer « ŌKEI » sur TOUS les produits (à la main ou agent `fix-brand`)
