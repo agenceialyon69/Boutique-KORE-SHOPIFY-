@@ -9,7 +9,7 @@ est édité par :
 
 - **Nom / Raison sociale :** Aïcha DIALLO — Entrepreneur individuel (micro-entreprise)
 - **Statut juridique :** Entreprise individuelle (micro-entrepreneur)
-- **Adresse du siège :** [Adresse complète — à compléter]
+- **Adresse du siège :** 16 avenue d'Oschatz, 69200 Vénissieux
 - **SIRET :** 98975496500014 — **SIREN :** 989754965
 - **N° de TVA intracommunautaire :** Non applicable — TVA non applicable, art. 293 B du CGI (franchise en base)
 - **E-mail :** contact@korewear.fr
