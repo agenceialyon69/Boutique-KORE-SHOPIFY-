@@ -1,7 +1,7 @@
 # 📊 PROGRESS — Boutique KORE
 
 > Tableau de bord vivant. Mis à jour à chaque session par Claude.
-> Dernière mise à jour : 2026-06-02 (fournisseur CJ choisi, legging héros sélectionné, expédition réglée)
+> Dernière mise à jour : 2026-06-03 (optimisation complète KORE en 8 étapes + projet parallèle masseur)
 
 ## 🟢 Fait (préparé dans le dépôt)
 - [x] Audit red team complet (`AUDIT.md`)
@@ -12,6 +12,8 @@
 - [x] Agent d'automatisation Shopify (`agent/`) — code testé (syntaxe/JSON/markdown)
 - [x] Règles permanentes gravées (`CLAUDE.md`)
 - [x] **Stratégie de lancement = 1 produit héros** : fiche prête à coller (`contenu/produit-hero.md`)
+- [x] **Optimisation complète KORE (méthode comité 8 étapes)** : `contenu/optimisation-legging-kore-etapes-1-2.md` + `-3-8.md` — analyse, copy 13 blocs, CRO, panier (Pack Duo), 5 e-mails, stack, archi (code gaté), audit. Correctifs prioritaires : **délai 5-10 j** (était faux : 2-5 j en ligne), **seuil livraison offerte** vs 34,90 €, fin « ŌKEI », zéro allégation minceur
+- [x] **Projet parallèle masseur cervical** (boutique séparée, à déménager) : `contenu/masseur-cervical-etapes-1-2.md`, `-3-8.md`, `nouvelle-boutique-masseur-RECAP.md`
 
 ## 🔴 EN LIGNE dans la vraie boutique (ce que voient les clients)
 - [x] 1 produit : « ŌKEI » retiré du titre (fait à la main par le propriétaire)
