@@ -33,7 +33,7 @@ Taille haute · sans coutures · effet sculptant.
 *(❌ jamais « Retours gratuits »)*
 
 ## 4. PRODUITS EN VEDETTE (collection / featured)
-- **Titre :** `Best-sellers`
+- **Titre :** `Notre sélection`  *(pas « best-sellers » : aucune vente encore)*
 - Affiche **4 produits** (legging héros + brassière + 1 ensemble + 1 short)
 - Bouton « Ajouter au panier » visible
 
