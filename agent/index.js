@@ -5,6 +5,10 @@ import applyProducts from './tasks/apply-products.js';
 import createPages from './tasks/create-pages.js';
 import createCollections from './tasks/create-collections.js';
 import reviewProducts from './tasks/review-products.js';
+import reviewPages from './tasks/review-pages.js';
+import reviewCollections from './tasks/review-collections.js';
+import reviewSeo from './tasks/review-seo.js';
+import analyzeTheme from './tasks/analyze-theme.js';
 
 const tasks = {
   audit,
@@ -13,6 +17,10 @@ const tasks = {
   'create-pages': createPages,
   'create-collections': createCollections,
   'review-products': reviewProducts,
+  'review-pages': reviewPages,
+  'review-collections': reviewCollections,
+  'review-seo': reviewSeo,
+  'analyze-theme': analyzeTheme,
 };
 
 const HELP = `
@@ -28,6 +36,10 @@ Tâches disponibles :
   create-pages         Crée les pages (À propos, FAQ, mentions légales, CGV…)
   create-collections   Crée les collections (Homme, Femme, Accessoires…)
   review-products      🤖 IA Claude relit + corrige chaque produit en RED TEAM
+  review-pages         🤖 IA relit les pages (légales, à propos, FAQ)
+  review-collections   🤖 IA relit titres + descriptions de collections
+  review-seo           🤖 IA optimise méta-titres + méta-descriptions SEO
+  analyze-theme        🤖 IA LIT le thème et propose un PLAN (n'applique jamais)
 
 Sécurité :
   • SANS --apply  → SIMULATION : montre ce qui serait fait, ne modifie RIEN.
