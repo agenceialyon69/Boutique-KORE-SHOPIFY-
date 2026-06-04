@@ -1,12 +1,15 @@
 {
   "shop": "hbv1uj-b9.myshopify.com",
 
-  "_aide": "Renseigne SOIT 'token' (app custom de l'admin), SOIT 'clientId' + 'clientSecret' (app du dev dashboard). Pas besoin des deux.",
+  "_aide": "Renseigne 'clientId' + 'clientSecret' (app du Dev Dashboard). Pour la tâche IA 'review-products', ajoute 'claudeApiKey'.",
 
   "token": "",
 
   "clientId": "",
   "clientSecret": "",
+
+  "claudeApiKey": "",
+  "claudeModel": "claude-sonnet-4-6",
 
   "brand": "KORE"
 }
