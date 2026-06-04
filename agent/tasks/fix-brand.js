@@ -1,22 +1,27 @@
-/** Supprime « ŌKEI » des titres de produits et corrige le fournisseur → KORE. */
+/** Nettoie la marque : retire « ŌKEI » et « CORÉEN » des titres, et force le fournisseur → KORE. */
 export default async function fixBrand({ shopify, apply, cfg }) {
   const brand = cfg.brand || 'KORE';
   const products = await shopify.getAll('products', 'products');
   let changed = 0;
 
+  // Mots parasites à retirer des titres (ŌKEI, CORÉEN et variantes)
+  const STRIP = /\s*[—\-–]?\s*(ŌKEI|OKEI|ÔKEI|CORÉEN|COREEN|CORÉENNE|COREENNE)\s*/gi;
+
   for (const p of products) {
     const newTitle = p.title
-      .replace(/\s*[—\-–]\s*(ŌKEI|OKEI|ÔKEI)\s*$/i, '') // "… — ŌKEI" en fin de titre
-      .replace(/\s*(ŌKEI|OKEI|ÔKEI)\s*/gi, ' ')          // toute autre occurrence
+      .replace(STRIP, ' ')
       .replace(/\s{2,}/g, ' ')
       .trim();
-    const fixVendor = p.vendor && /ŌKEI|OKEI|ÔKEI/i.test(p.vendor);
+
+    // Force le fournisseur à KORE pour TOUT produit dont le vendeur n'est pas déjà KORE
+    const currentVendor = (p.vendor || '').trim();
+    const fixVendor = currentVendor.toUpperCase() !== brand.toUpperCase();
 
     if (newTitle !== p.title || fixVendor) {
       changed++;
       const parts = [];
       if (newTitle !== p.title) parts.push(`titre → "${newTitle}"`);
-      if (fixVendor) parts.push(`fournisseur → ${brand}`);
+      if (fixVendor) parts.push(`fournisseur "${currentVendor || '(vide)'}" → ${brand}`);
       console.log(`• "${p.title}"  [${parts.join(' | ')}]`);
 
       if (apply) {
