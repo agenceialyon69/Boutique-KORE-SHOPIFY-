@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KORE — Conseiller</title>
+<style>
+  :root { --bg:#F6F1EA; --ink:#171512; --gold:#b08c5a; --line:rgba(25,22,18,.12); }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;
+         background:var(--bg); color:var(--ink); display:flex; flex-direction:column; height:100dvh; }
+  header { padding:16px; text-align:center; font-weight:800; letter-spacing:.18em;
+           border-bottom:1px solid var(--line); background:#fff; }
+  header small { display:block; font-weight:400; letter-spacing:0; color:#6f665d; font-size:12px; margin-top:4px; }
+  #chat { flex:1; overflow-y:auto; padding:16px; display:flex; flex-direction:column; gap:10px; }
+  .b { max-width:82%; padding:12px 14px; border-radius:18px; line-height:1.5; font-size:15px; white-space:pre-wrap; }
+  .user { align-self:flex-end; background:var(--ink); color:#fff; border-bottom-right-radius:6px; }
+  .bot  { align-self:flex-start; background:#fff; border:1px solid var(--line); border-bottom-left-radius:6px; }
+  form { display:flex; gap:8px; padding:12px; border-top:1px solid var(--line); background:#fff; }
+  input { flex:1; padding:14px 16px; border:1px solid var(--line); border-radius:999px; font-size:16px; outline:none; }
+  button { padding:0 20px; border:0; border-radius:999px; background:var(--ink); color:#fff; font-weight:700; cursor:pointer; }
+  button:disabled { opacity:.5; }
+</style>
+</head>
+<body>
+  <header>KORE 🖤 CONSEILLER<small>Ton expert e-commerce — pose ta question</small></header>
+  <div id="chat"></div>
+  <form id="form">
+    <input id="input" placeholder="Ex : comment augmenter ma conversion ?" autocomplete="off" />
+    <button id="send">Envoyer</button>
+  </form>
+<script>
+  const chat = document.getElementById('chat');
+  const form = document.getElementById('form');
+  const input = document.getElementById('input');
+  const send = document.getElementById('send');
+  const history = [];
+
+  function bubble(cls, text) {
+    const d = document.createElement('div');
+    d.className = 'b ' + cls;
+    d.textContent = text;
+    chat.appendChild(d);
+    chat.scrollTop = chat.scrollHeight;
+    return d;
+  }
+  bubble('bot', 'Bonjour 👋 Je suis le conseiller KORE. Demande-moi tout : conversion, prix, SEO, idées TikTok…');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const q = input.value.trim();
+    if (!q) return;
+    bubble('user', q);
+    history.push({ role:'user', content:q });
+    input.value = '';
+    send.disabled = true;
+    const typing = bubble('bot', '…');
+    try {
+      const r = await fetch('/api/chat', {
+        method:'POST',
+        headers:{ 'content-type':'application/json' },
+        body: JSON.stringify({ messages: history })
+      });
+      const data = await r.json();
+      const reply = data.reply || ('⚠️ ' + (data.error || 'Erreur'));
+      typing.textContent = reply;
+      if (data.reply) history.push({ role:'assistant', content: reply });
+    } catch (err) {
+      typing.textContent = '⚠️ ' + err.message;
+    } finally {
+      send.disabled = false;
+      input.focus();
+      chat.scrollTop = chat.scrollHeight;
+    }
+  });
+</script>
+</body>
+</html>
