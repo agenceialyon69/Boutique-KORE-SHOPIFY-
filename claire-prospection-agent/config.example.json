@@ -1,0 +1,5 @@
+{
+  "_aide": "Copie ce fichier en config.json et mets ta clé Anthropic (sk-ant-…).",
+  "claudeApiKey": "",
+  "claudeModel": "claude-sonnet-4-6"
+}
