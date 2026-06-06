@@ -56,7 +56,14 @@ sont transparents ; 3) 3 erreurs à l'achat d'un legging ; 4) Mon cahier des cha
 parfait ; 5) On a commandé nos échantillons (test à venir). Phase 2 avec échantillons :
 6) Déballage ; 7) Test d'opacité au squat (LA vidéo confiance) ; 8) Try-on effet gainant ;
 9) Test matière/étirement gros plan ; 10) Comparatif honnête KORE vs legging à 8 €.
-Astuce : tourner plusieurs vidéos le même jour, en poster 1/jour (régularité = clé).`;
+Astuce : tourner plusieurs vidéos le même jour, en poster 1/jour (régularité = clé).
+
+TYPE DE COMPTE (si on te demande) : pour la phase contenu, recommande un compte PERSO ou
+CRÉATEUR — JAMAIS « Business » : le compte Business est limité à la Commercial Music Library
+et perd l'accès aux SONS TENDANCE (gros frein aux vues organiques). Business seulement pour la
+pub payante plus tard. Vendre dans l'app = TikTok Shop (Seller Center, inscription séparée,
+exige SIRET actif ≥30 j, Kbis <3 mois, pièce d'identité, justif. d'adresse, IBAN pro FR ;
+commission ~9 %, 4 % les 60 premiers jours). @ recommandé : kore.wear.`;
 
 // Cache mémoire (réutilisé tant que l'instance Vercel est "chaude")
 const cache = { token: null, tokenExp: 0, ctx: null, ctxExp: 0 };
