@@ -1,5 +1,5 @@
 import { askClaude, parseJson } from '../lib/claude.js';
-import { violations } from '../lib/guardrail.js';
+import { violations, verifyFacts, productFacts } from '../lib/guardrail.js';
 
 /** review-seo : Claude optimise méta-titre + méta-description SEO de chaque produit. */
 const SYSTEM = `Tu es le SEO Officer de KORE (activewear féminin, France, korewear.fr).
@@ -33,15 +33,21 @@ export default async function reviewSeo({ shopify, apply, cfg }) {
   let changed = 0;
   for (const p of products) {
     const meta = await getMeta(shopify, p.id);
+    const facts = productFacts(p);
     const user =
       `Produit : ${p.title}\nMéta-titre actuel : ${meta.title?.value || '(vide)'}\n` +
-      `Méta-description actuelle : ${meta.desc?.value || '(vide)'}\n\nPropose le SEO optimisé. JSON.`;
+      `Méta-description actuelle : ${meta.desc?.value || '(vide)'}\n` +
+      `FAITS VÉRIFIÉS (n'affirme RIEN au-delà) : couleurs réelles (${facts.colors.length}) : ` +
+      `${facts.colors.join(', ') || 'non renseignées'} ; tailles réelles : ${facts.sizes.join(', ') || 'non renseignées'}.\n\n` +
+      `Propose le SEO optimisé. JSON.`;
     let out;
     try { out = parseJson(await askClaude({ apiKey: cfg.claudeApiKey, model, system: SYSTEM, user })); }
     catch (e) { console.log(`⚠️  "${p.title}" — réponse illisible (${e.message}).`); continue; }
     if (!out.changed) { console.log(`✓  "${p.title}" — SEO déjà bon.`); continue; }
     const probs = violations(out.meta_title, out.meta_description);
     if (probs.length) { console.log(`⛔  "${p.title}" — SEO BLOQUÉ (${probs.join(', ')}). NON appliqué.`); continue; }
+    const faux = verifyFacts(`${out.meta_title} ${out.meta_description}`, facts);
+    if (faux.length) { console.log(`⛔  "${p.title}" — FAIT FAUX vs Shopify (${faux.join(' ; ')}). NON appliqué.`); continue; }
     changed++;
     console.log(`• "${p.title}"\n   Titre SEO → ${out.meta_title}\n   Desc SEO → ${out.meta_description}\n   impact : ${out.impact} | confiance : ${out.confiance} | risque : ${out.risque}`);
     if (apply) {

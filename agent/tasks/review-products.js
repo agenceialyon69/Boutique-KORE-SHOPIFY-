@@ -1,5 +1,5 @@
 import { askClaude, parseJson } from '../lib/claude.js';
-import { violations } from '../lib/guardrail.js';
+import { violations, verifyFacts, productFacts } from '../lib/guardrail.js';
 
 /**
  * review-products : l'agent agit en « Head of Ecommerce + CRO + Compliance Officer ».
@@ -48,11 +48,16 @@ export default async function reviewProducts({ shopify, apply, cfg }) {
 
   let changed = 0;
   for (const p of products) {
+    const facts = productFacts(p);
     const user =
       `Produit actuel :\n` +
       `Titre : ${p.title}\n` +
       `Fournisseur : ${p.vendor || '(vide)'}\n` +
       `Description (HTML) : ${p.body_html || '(vide)'}\n\n` +
+      `FAITS VÉRIFIÉS (données Shopify réelles — n'affirme RIEN au-delà) :\n` +
+      `Couleurs réelles (${facts.colors.length}) : ${facts.colors.join(', ') || 'non renseignées'}\n` +
+      `Tailles réelles : ${facts.sizes.join(', ') || 'non renseignées'}\n` +
+      `N'annonce aucune couleur, taille ou « N coloris » absent de ces listes. Dans le doute, n'en mentionne pas.\n\n` +
       `Applique tes 5 missions. Ne modifie QUE si un KPI est clairement amélioré. Renvoie le JSON.`;
 
     let out;
@@ -72,6 +77,12 @@ export default async function reviewProducts({ shopify, apply, cfg }) {
     const probs = violations(out.title, out.description_html);
     if (probs.length) {
       console.log(`⛔  "${p.title}" — proposition BLOQUÉE (${probs.join(', ')}). NON appliqué.`);
+      continue;
+    }
+
+    const faux = verifyFacts(`${out.title} ${out.description_html}`, facts);
+    if (faux.length) {
+      console.log(`⛔  "${p.title}" — FAIT FAUX vs Shopify (${faux.join(' ; ')}). NON appliqué.`);
       continue;
     }
 
