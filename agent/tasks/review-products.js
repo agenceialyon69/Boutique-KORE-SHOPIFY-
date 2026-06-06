@@ -1,4 +1,5 @@
 import { askClaude, parseJson } from '../lib/claude.js';
+import { violations } from '../lib/guardrail.js';
 
 /**
  * review-products : l'agent agit en « Head of Ecommerce + CRO + Compliance Officer ».
@@ -65,6 +66,12 @@ export default async function reviewProducts({ shopify, apply, cfg }) {
 
     if (!out.changed) {
       console.log(`✓  "${p.title}" — aucun gain KPI clair, on ne touche pas (discipline).`);
+      continue;
+    }
+
+    const probs = violations(out.title, out.description_html);
+    if (probs.length) {
+      console.log(`⛔  "${p.title}" — proposition BLOQUÉE (${probs.join(', ')}). NON appliqué.`);
       continue;
     }
 

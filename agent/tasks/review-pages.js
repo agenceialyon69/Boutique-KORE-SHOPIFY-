@@ -1,4 +1,5 @@
 import { askClaude, parseJson } from '../lib/claude.js';
+import { violations } from '../lib/guardrail.js';
 
 /** review-pages : Claude relit les pages (légales, à propos, FAQ) en red team KORE. */
 const SYSTEM = `Tu es le Compliance + Copywriting Officer de KORE (activewear féminin, France).
@@ -22,6 +23,8 @@ export default async function reviewPages({ shopify, apply, cfg }) {
     try { out = parseJson(await askClaude({ apiKey: cfg.claudeApiKey, model, system: SYSTEM, user })); }
     catch (e) { console.log(`⚠️  "${pg.title}" — réponse illisible (${e.message}).`); continue; }
     if (!out.changed) { console.log(`✓  "${pg.title}" — déjà bon (discipline).`); continue; }
+    const probs = violations(out.title, out.body_html);
+    if (probs.length) { console.log(`⛔  "${pg.title}" — BLOQUÉ (${probs.join(', ')}). NON appliqué.`); continue; }
     changed++;
     console.log(`• "${pg.title}"\n   KPI : ${out.kpi} | impact : ${out.impact} | confiance : ${out.confiance} | risque : ${out.risque}\n   (${out.raison})`);
     if (apply) await shopify.rest('PUT', `pages/${pg.id}.json`, { page: { id: pg.id, title: out.title || pg.title, body_html: out.body_html || pg.body_html } });

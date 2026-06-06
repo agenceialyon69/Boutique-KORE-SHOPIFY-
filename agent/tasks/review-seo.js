@@ -1,4 +1,5 @@
 import { askClaude, parseJson } from '../lib/claude.js';
+import { violations } from '../lib/guardrail.js';
 
 /** review-seo : Claude optimise méta-titre + méta-description SEO de chaque produit. */
 const SYSTEM = `Tu es le SEO Officer de KORE (activewear féminin, France, korewear.fr).
@@ -39,6 +40,8 @@ export default async function reviewSeo({ shopify, apply, cfg }) {
     try { out = parseJson(await askClaude({ apiKey: cfg.claudeApiKey, model, system: SYSTEM, user })); }
     catch (e) { console.log(`⚠️  "${p.title}" — réponse illisible (${e.message}).`); continue; }
     if (!out.changed) { console.log(`✓  "${p.title}" — SEO déjà bon.`); continue; }
+    const probs = violations(out.meta_title, out.meta_description);
+    if (probs.length) { console.log(`⛔  "${p.title}" — SEO BLOQUÉ (${probs.join(', ')}). NON appliqué.`); continue; }
     changed++;
     console.log(`• "${p.title}"\n   Titre SEO → ${out.meta_title}\n   Desc SEO → ${out.meta_description}\n   impact : ${out.impact} | confiance : ${out.confiance} | risque : ${out.risque}`);
     if (apply) {

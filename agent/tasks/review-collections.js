@@ -1,4 +1,5 @@
 import { askClaude, parseJson } from '../lib/claude.js';
+import { violations } from '../lib/guardrail.js';
 
 /** review-collections : Claude relit titres + descriptions de collections en red team KORE. */
 const SYSTEM = `Tu es le CRO + Copywriting Officer de KORE (activewear féminin, France).
@@ -23,6 +24,8 @@ export default async function reviewCollections({ shopify, apply, cfg }) {
     try { out = parseJson(await askClaude({ apiKey: cfg.claudeApiKey, model, system: SYSTEM, user })); }
     catch (e) { console.log(`⚠️  "${c.title}" — réponse illisible (${e.message}).`); continue; }
     if (!out.changed) { console.log(`✓  "${c.title}" — déjà bon (discipline).`); continue; }
+    const probs = violations(out.title, out.body_html);
+    if (probs.length) { console.log(`⛔  "${c.title}" — BLOQUÉ (${probs.join(', ')}). NON appliqué.`); continue; }
     changed++;
     console.log(`• "${c.title}"\n   KPI : ${out.kpi} | impact : ${out.impact} | confiance : ${out.confiance} | risque : ${out.risque}\n   (${out.raison})`);
     const resource = c.rules ? 'smart_collections' : 'custom_collections';
