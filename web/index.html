@@ -35,6 +35,7 @@
   const input = document.getElementById('input');
   const send = document.getElementById('send');
   const history = [];
+  let accessCode = sessionStorage.getItem('kore_code') || '';
 
   function bubble(cls, text) {
     const d = document.createElement('div');
@@ -50,6 +51,10 @@
     e.preventDefault();
     const q = input.value.trim();
     if (!q) return;
+    if (!accessCode) {
+      accessCode = (prompt('Code d\'accès :') || '').trim();
+      sessionStorage.setItem('kore_code', accessCode);
+    }
     bubble('user', q);
     history.push({ role:'user', content:q });
     input.value = '';
@@ -59,8 +64,9 @@
       const r = await fetch('/api/chat', {
         method:'POST',
         headers:{ 'content-type':'application/json' },
-        body: JSON.stringify({ messages: history })
+        body: JSON.stringify({ messages: history, code: accessCode })
       });
+      if (r.status === 401) { sessionStorage.removeItem('kore_code'); accessCode = ''; }
       const data = await r.json();
       const reply = data.reply || ('⚠️ ' + (data.error || 'Erreur'));
       typing.textContent = reply;
