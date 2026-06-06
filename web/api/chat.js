@@ -1,18 +1,54 @@
-// Fonction Vercel SÉCURISÉE — code d'accès + même origine + limites anti-abus.
+// Conseiller KORE — SÉCURISÉ + accès LECTURE à la boutique live (read-only).
+// Variables Vercel : ANTHROPIC_API_KEY, ACCESS_CODE, ALLOWED_ORIGIN,
+//                    SHOPIFY_SHOP, SHOPIFY_CLIENT_ID, SHOPIFY_CLIENT_SECRET (lecture produits).
 
-const SYSTEM = `Tu es le conseiller e-commerce / CRO / Compliance de la boutique KORE
+const RULES = `Tu es le conseiller e-commerce / CRO / Compliance de la boutique KORE
 (activewear féminin premium, korewear.fr, France, exploitée par Aïcha DIALLO).
-Catalogue : leggings (34,90 €), brassières (24,90 €), shorts (24,90 €), jupe-legging (39,90 €),
-ensembles (39,90–49,90 €). Livraison offerte (5-10 jours, suivi), retours 14 jours.
-Tu réponds en FRANÇAIS, franc et red team, priorisé par impact réel sur les ventes et la confiance.
-RÈGLES : jamais de faux avis ni fausses allégations ; conformité loi Omnibus (pas de faux prix barré) ;
-ne jamais dire « retours gratuits ». Réponses courtes, concrètes, actionnables.`;
+Tu réponds en FRANÇAIS, franc et en mode red team, priorisé par impact réel sur les ventes
+et la confiance. RÈGLES : jamais de faux avis ni fausses allégations ; conformité loi Omnibus
+(pas de faux prix barré, pas de fausse urgence) ; ne jamais dire « retours gratuits » ;
+livraison offerte (5-10 j, suivi), retours 14 jours. Réponses courtes, concrètes, actionnables.
+Tu PROPOSES des optimisations/corrections — c'est TAFSIR qui valide et applique. Tu ne modifies rien.`;
+
+// Cache mémoire (réutilisé tant que l'instance Vercel est "chaude")
+const cache = { token: null, tokenExp: 0, ctx: null, ctxExp: 0 };
+
+async function shopToken(shop, id, secret) {
+  if (cache.token && Date.now() < cache.tokenExp) return cache.token;
+  const r = await fetch(`https://${shop}/admin/oauth/access_token`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({ grant_type: 'client_credentials', client_id: id, client_secret: secret }),
+  });
+  const d = await r.json();
+  if (!r.ok) throw new Error('jeton Shopify refusé');
+  cache.token = d.access_token;
+  cache.tokenExp = Date.now() + ((d.expires_in || 3600) * 1000) - 60000;
+  return cache.token;
+}
+
+async function storeContext() {
+  const shop = process.env.SHOPIFY_SHOP, id = process.env.SHOPIFY_CLIENT_ID, secret = process.env.SHOPIFY_CLIENT_SECRET;
+  if (!shop || !id || !secret) return ''; // pas configuré → pas de contexte live
+  if (cache.ctx && Date.now() < cache.ctxExp) return cache.ctx;
+  const token = await shopToken(shop, id, secret);
+  const r = await fetch(`https://${shop}/admin/api/2024-10/products.json?limit=50`, {
+    headers: { 'X-Shopify-Access-Token': token },
+  });
+  const d = await r.json();
+  const lignes = (d.products || []).map((p) => {
+    const prix = [...new Set((p.variants || []).map((v) => v.price))].join('/');
+    return `- ${p.title} — fournisseur: ${p.vendor || '?'} — prix: ${prix}€ — statut: ${p.status}`;
+  }).join('\n');
+  cache.ctx = `ÉTAT ACTUEL DE LA BOUTIQUE (lecture live) :\n${lignes}`;
+  cache.ctxExp = Date.now() + 5 * 60 * 1000; // cache 5 min
+  return cache.ctx;
+}
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') { res.status(405).json({ error: 'Méthode non autorisée.' }); return; }
 
-  // 1) MÊME ORIGINE — bloque les appels venant d'autres sites
-  const allowed = process.env.ALLOWED_ORIGIN; // ex : https://agent-kore.vercel.app
+  const allowed = process.env.ALLOWED_ORIGIN;
   const origin = req.headers.origin || '';
   if (allowed && origin && origin !== allowed) { res.status(403).json({ error: 'Origine non autorisée.' }); return; }
 
@@ -23,7 +59,6 @@ export default async function handler(req, res) {
   let body = req.body;
   if (typeof body === 'string') { try { body = JSON.parse(body); } catch { body = {}; } }
 
-  // 2) CODE D'ACCÈS — protège ton portefeuille (défini dans Vercel : ACCESS_CODE)
   const accessCode = process.env.ACCESS_CODE;
   if (accessCode) {
     const given = (body && body.code) || req.headers['x-access-code'] || '';
@@ -32,19 +67,19 @@ export default async function handler(req, res) {
 
   const messages = body && Array.isArray(body.messages) ? body.messages : null;
   if (!messages) { res.status(400).json({ error: 'messages requis.' }); return; }
-
-  // 3) GARDE-FOUS anti-abus
   if (messages.length > 40) { res.status(400).json({ error: 'Conversation trop longue.' }); return; }
   const last = messages[messages.length - 1];
-  if (last && typeof last.content === 'string' && last.content.length > 2000) {
-    res.status(400).json({ error: 'Message trop long.' }); return;
-  }
+  if (last && typeof last.content === 'string' && last.content.length > 2000) { res.status(400).json({ error: 'Message trop long.' }); return; }
+
+  let ctx = '';
+  try { ctx = await storeContext(); } catch (e) { ctx = `(boutique non lisible : ${e.message})`; }
+  const system = RULES + (ctx ? `\n\n${ctx}` : '');
 
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model, max_tokens: 1000, system: SYSTEM, messages }),
+      body: JSON.stringify({ model, max_tokens: 1000, system, messages }),
     });
     const data = await r.json();
     if (!r.ok) { res.status(r.status).json({ error: data?.error?.message || 'Erreur API Claude.' }); return; }
