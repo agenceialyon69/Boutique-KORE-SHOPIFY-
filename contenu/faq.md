@@ -1,60 +1,49 @@
-# ❓ Page FAQ — KORE
-
-La FAQ lève les freins à l'achat (« et si ça ne me va pas ? », « ça arrive quand ? »).
-Colle dans **Pages → Ajouter une page → « FAQ »** et lie au footer.
-Adapte les délais/réponses à ta réalité.
+# ❓ FAQ — KORE
+> Prêt à coller dans Shopify (éditeur de thème > section FAQ accordéon).
+> Ton utilisé partout (cohérent avec la boutique).
+> Dernière mise à jour : 2026-06-09
 
 ---
 
-## Commandes & paiement
+## Comment vous contacter ?
+Écris-nous à **contact@korewear.fr** — on répond sous 24 à 48h ouvrées.
 
-**Comment passer commande ?**
-Ajoutez vos articles au panier, cliquez sur « Commander », renseignez vos coordonnées et
-payez en quelques secondes. Une confirmation vous est envoyée par e-mail.
+---
 
-**Quels moyens de paiement acceptez-vous ?**
-Carte bancaire, ainsi que Shop Pay, Apple Pay et Google Pay. Toutes les transactions sont
-sécurisées et cryptées (SSL).
+## Quel est le délai de livraison ?
+La livraison est **offerte en France**. Préparation sous 1 à 3 jours, puis expédition avec suivi. Compte en général **5 à 10 jours ouvrés** selon ta région. Tu reçois ton numéro de suivi dès l'envoi.
 
-**Le paiement est-il sécurisé ?**
-Oui. Nous n'avons jamais accès à vos données bancaires : elles sont traitées par notre
-prestataire de paiement certifié.
+---
 
-## Livraison
+## Le tissu est-il opaque ?
+On sélectionne uniquement des mailles épaisses pour nos leggings. La composition exacte est précisée sur chaque fiche produit.
 
-**Quels sont les délais de livraison ?**
-Préparation sous [1-2] jours, puis [3-7] jours ouvrés en France métropolitaine.
+---
 
-**Combien coûte la livraison ?**
-**Offerte dès 80€** d'achat. En dessous, [X,XX]€. Livraison via [transporteur].
+## Comment choisir ma taille ?
+Prends ta taille habituelle. Entre deux tailles : prends la taille en dessous pour un maintien plus enveloppant, ou la taille au-dessus pour plus de liberté de mouvement. Un guide des tailles est disponible sur chaque fiche produit.
 
-**Comment suivre ma commande ?**
-Un numéro de suivi vous est envoyé par e-mail dès l'expédition.
+---
 
-**Livrez-vous à l'étranger ?**
-[Oui / Non — préciser les zones et tarifs.]
+## Et si la taille ne me convient pas ?
+Tu disposes de **14 jours** après réception pour effectuer un retour. L'article doit être neuf, non porté, avec ses étiquettes intactes. Écris-nous à contact@korewear.fr avec ton numéro de commande.
 
-## Retours & remboursements
+---
 
-**Puis-je retourner un article ?**
-Oui, vous avez **30 jours** pour changer d'avis. L'article doit être neuf, non porté,
-avec ses étiquettes.
+## Quand suis-je remboursée ?
+Dès réception et vérification de ton retour, le remboursement est effectué sous 14 jours sur ton moyen de paiement initial.
 
-**Comment faire un retour ?**
-Écrivez-nous à [contact@ton-domaine.com] avec votre n° de commande, nous vous guidons.
+---
 
-**Quand suis-je remboursé(e) ?**
-Sous 14 jours après réception de votre retour, sur votre moyen de paiement initial.
+## Quels moyens de paiement acceptez-vous ?
+Carte bancaire (Visa, Mastercard), Shop Pay, Apple Pay et Google Pay. Toutes les transactions sont sécurisées (SSL).
 
-## Produits & tailles
+---
 
-**Comment choisir ma taille ?**
-Consultez le **guide des tailles** présent sur chaque fiche produit.
+## Ma commande est-elle confirmée ?
+Oui — un e-mail de confirmation t'est envoyé automatiquement après chaque commande. Vérifie tes spams si tu ne le reçois pas.
 
-**Les couleurs sont-elles fidèles ?**
-Nous faisons notre maximum ; de légères variations d'écran sont possibles.
+---
 
-## Contact
-
-**Une autre question ?**
-Écrivez-nous à [contact@ton-domaine.com] — nous répondons sous 24h (jours ouvrés).
+## Livrez-vous hors de France ?
+Pour l'instant, on livre uniquement en **France métropolitaine**.
