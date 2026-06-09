@@ -1,50 +1,52 @@
-# 🗂️ Collections — structure & textes
-
-Une boutique pro a des **collections claires**, pas un seul fourre-tout.
-Crée-les via **Produits → Collections → Créer une collection**, puis ajoute le texte
-d'intro (bon pour le SEO et la conversion) dans le champ **Description**.
+# 🗂️ Collections — structure & textes KORE
+> Boutique activewear féminin. Structure adaptée au catalogue réel.
+> Dernière mise à jour : 2026-06-09
 
 ---
 
-## Structure conseillée
-Vu ton catalogue (chemise homme, t-shirt, robe, lunettes), structure simple et lisible :
+## Structure (à créer dans Produits → Collections)
 
-- **Homme** (chemises, t-shirts…)
-- **Femme** (robes…)
-- **Accessoires** (lunettes…)
-- **Nouveautés** (collection automatique : produits récents)
-- **Best-sellers** (tes meilleures ventes)
+| Collection | Type | Contenu |
+|---|---|---|
+| **Leggings** | Manuelle | Legging héros + variantes |
+| **Brassières** | Manuelle | Brassières sport |
+| **Ensembles** | Manuelle | Sets coordonnés (legging + brassière, top + short) |
+| **Shorts & Jupes** | Manuelle | Shorts taille haute, jupes de sport |
+| **Nouveautés** | Automatique | Produits ajoutés récemment |
 
 Mets ces collections dans le **menu principal** (Navigation → Menu principal).
 
 ---
 
-## Textes d'intro (à coller dans la description de chaque collection)
+## Textes d'intro (à coller dans la Description de chaque collection)
 
-### Homme
-> Des essentiels masculins au style intemporel. Chemises en lin, t-shirts oversize et
-> pièces pensées pour le confort comme pour l'allure. La garde-robe estivale, version KORE.
+### Leggings
+> Taille haute, effet sculptant, maille seamless. Des leggings pensés pour tenir à
+> l'effort — et rester impeccables toute la journée. Opacité vérifiée, confort garanti.
 
-### Femme
-> Robes fluides, imprimés lumineux et coupes flatteuses : la collection Femme KORE habille
-> vos beaux jours avec élégance, du matin au soir.
+### Brassières
+> Du maintien léger au maintien fort, des brassières qui s'adaptent à ton entraînement.
+> Dos travaillé, maille respirante, coordonnées avec les leggings KORE.
 
-### Accessoires
-> La touche finale qui change tout. Lunettes et accessoires sélectionnés pour sublimer
-> chaque tenue, sans effort.
+### Ensembles
+> Legging + brassière ou top + short : les sets coordonnés KORE pour une tenue complète,
+> assortie, sans effort de style.
+
+### Shorts & Jupes
+> Liberté de mouvement maximale. Shorts taille haute et jupes de sport pour le yoga,
+> le pilates et le training léger.
 
 ### Nouveautés
-> Les dernières pièces ajoutées à la collection KORE. Découvrez en avant-première nos
-> nouveautés de saison.
-
-### Best-sellers
-> Plébiscités par nos clients : retrouvez ici les pièces les plus aimées de KORE.
+> Les dernières pièces ajoutées chez KORE. Découvre nos nouveaux coloris et modèles en avant-première.
 
 ---
 
 ## Meta SEO par collection
-- **Meta titre :** `[Nom collection] | KORE`
-- **Meta description :** reprends la 1ʳᵉ phrase de l'intro (≤ 155 caractères).
+**Meta titre :** `[Nom collection] Femme | KORE`
+**Meta description :** reprends la 1ʳᵉ phrase de l'intro (≤ 155 caractères).
 
-> 💡 Évite de garder une seule collection « Tous les produits » comme page principale :
-> des collections thématiques rassurent et aident le client à trouver vite.
+Exemple Leggings :
+```
+Leggings Sculptants Femme | KORE
+Leggings taille haute seamless, effet sculptant et squat-proof. Livraison offerte, retours 14 jours. — KORE
+```

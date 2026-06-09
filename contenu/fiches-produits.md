@@ -1,104 +1,116 @@
-# ✍️ Fiches produits réécrites — prêtes à coller
-
-**Règles appliquées :**
-- Marque unifiée **KORE** (suffixe « — ŌKEI » supprimé).
-- Titre clair et lisible (Shopify : *Produits → un produit → Titre*).
-- Description orientée **bénéfices** (pas juste des caractéristiques).
-- Bloc **Matière / Entretien / Livraison** pour rassurer.
-- **Meta SEO** (Shopify : bas de la fiche → *Référencement sur les moteurs de recherche → Modifier*).
-
-> 💡 Remplace les valeurs entre `[ ]` (matière exacte, tailles, délais) par tes infos réelles.
-> Ne promets jamais une caractéristique que le produit n'a pas.
+# ✍️ Fiches produits — KORE Activewear
+> Contenu prêt à coller pour chaque produit de la boutique.
+> Règles : marque KORE, tutoiement, livraison offerte, retours 14 jours, pas de faux prix barré.
+> Dernière mise à jour : 2026-06-09
 
 ---
 
-## 1) Chemise en lin — Homme
+## Bloc réassurance universel (à coller sous CHAQUE description)
+```html
+<ul>
+<li>🚚 <strong>Livraison offerte</strong> en France (5 à 10 jours ouvrés, suivi fourni)</li>
+<li>🔒 <strong>Paiement sécurisé</strong> (Visa, Mastercard, Apple Pay, Shop Pay)</li>
+<li>↩️ <strong>Retours 14 jours</strong> (article neuf, remboursement garanti)</li>
+<li>💬 <strong>Service client :</strong> contact@korewear.fr</li>
+</ul>
+```
 
-**Titre :** `Chemise en Lin Homme — Été`
+---
+
+## 1) Legging Sculptant Taille Haute — Seamless
+
+**Titre :** `Legging Sculptant Taille Haute KORE — Seamless`
 
 **Description :**
-> Légère, respirante et intemporelle, la Chemise en Lin KORE est la pièce idéale des
-> beaux jours. Sa matière naturelle laisse circuler l'air pour vous garder au frais,
-> tandis que sa coupe ajustée habille votre silhouette avec élégance — du déjeuner en
-> terrasse à la soirée d'été.
->
-> - 🌿 **Matière :** [100 % lin / mélange lin-coton — à préciser]
-> - ✂️ **Coupe :** ajustée, tombé fluide
-> - 🎨 **Coloris :** [à préciser]
-> - 📏 **Tailles :** [S à XXL — à préciser]
-> - 🧼 **Entretien :** lavage à 30°, repassage doux
-> - 🚚 **Livraison offerte dès 80€ · Retours 30 jours**
+```html
+<p><strong>Le legging qui te tient, te galbe et ne te lâche pas.</strong> Taille haute gainante, maille seamless sans coutures, extensible 4 sens — du tapis de yoga au quotidien.</p>
+<ul>
+<li>🧬 Effet sculptant : taille haute + maille compressive</li>
+<li>🚫 Sans coutures : zéro frottement, invisible sous les vêtements</li>
+<li>🍑 Couture remontante : effet galbant naturel</li>
+<li>📏 Tailles : S · M · L · XL</li>
+<li>🎨 Coloris : Noir</li>
+<li>🧼 Lavage à 30°, ne pas sécher en machine</li>
+</ul>
+```
 
-**Meta titre :** `Chemise en Lin Homme Été | KORE`
-**Meta description :** `Chemise en lin homme légère et respirante, coupe élégante pour l'été. Livraison offerte dès 80€, retours 30 jours. — KORE`
+**Meta titre :** `Legging Sculptant Taille Haute Seamless | KORE`
+**Meta description :** `Legging taille haute seamless, effet sculptant, extensible 4 sens. Livraison offerte, retours 14 jours. — KORE`
 
 ---
 
-## 2) Lunettes de soleil rétro
+## 2) Brassière de Sport — Maintien Léger à Moyen
 
-**Titre :** `Lunettes de Soleil Rétro`
+**Titre :** `Brassière Sport KORE — Seamless`
 
 **Description :**
-> Un style affirmé, une allure intemporelle. Les Lunettes Rétro KORE reprennent les
-> codes des années 90 avec une monture épurée qui sublime tous les visages. Verres
-> traités anti-UV pour protéger vos yeux avec style, tout l'été.
->
-> - 🕶️ **Protection :** verres [UV400 — à confirmer]
-> - 🎨 **Monture :** [matière / coloris à préciser]
-> - 👤 **Mixte :** homme & femme
-> - 📦 **Livré avec :** [étui / chiffon — à préciser]
-> - 🚚 **Livraison offerte dès 80€ · Retours 30 jours**
+```html
+<p><strong>Le maintien parfait pour le yoga, le pilates et le training léger.</strong> Maille seamless, dos travaillé, coordonnée avec les leggings KORE.</p>
+<ul>
+<li>💪 Maintien léger à moyen (yoga, pilates, marche)</li>
+<li>🚫 Sans coutures : confort maximal</li>
+<li>👙 Dos élégant : coupe beautiful-back</li>
+<li>🤝 Assortie aux leggings KORE (même maille, même coloris)</li>
+<li>📏 Tailles : S · M · L · XL</li>
+<li>🎨 Coloris : Noir</li>
+<li>🧼 Lavage à 30°, ne pas sécher en machine</li>
+</ul>
+```
 
-**Meta titre :** `Lunettes de Soleil Rétro | KORE`
-**Meta description :** `Lunettes de soleil rétro mixtes, verres anti-UV, style années 90. Livraison offerte dès 80€. — KORE`
+**Meta titre :** `Brassière Sport Seamless | KORE`
+**Meta description :** `Brassière sport seamless maintien léger à moyen, dos travaillé, assortie aux leggings KORE. Livraison offerte. — KORE`
 
 ---
 
-## 3) Robe fleurie vintage — Été
+## 3) Ensemble Yoga — Top Court + Short Seamless
 
-**Titre :** `Robe Fleurie Vintage — Été`
+**Titre :** `Ensemble Yoga KORE — Top Court + Short Seamless`
 
 **Description :**
-> Romantique et lumineuse, la Robe Fleurie KORE capture tout l'esprit de l'été. Son
-> imprimé floral délicat et sa coupe fluide flattent la silhouette et se portent du
-> matin au soir — sandales en journée, talons le soir.
->
-> - 🌸 **Imprimé :** floral all-over
-> - ✂️ **Coupe :** taille marquée, jupe évasée
-> - 🎨 **Coloris disponibles :** [rouge, jaune, vert, bleu — à confirmer]
-> - 📏 **Tailles :** [XS à 2XL — à confirmer]
-> - 🧼 **Entretien :** lavage à 30°
-> - 🚚 **Livraison offerte dès 80€ · Retours 30 jours**
+```html
+<p><strong>L'ensemble qui te suit du cours de yoga au café d'après.</strong> Top court manches courtes + short taille haute assortis — léger, respirant, coupé pour bouger librement.</p>
+<ul>
+<li>🤝 Ensemble coordonné : top + short, même teinte</li>
+<li>💪 Ultra-stretch : liberté de mouvement totale (yoga, pilates, training léger)</li>
+<li>🌬️ Léger & respirant : parfait pour l'été</li>
+<li>🍑 Short taille haute : maintien et effet galbant</li>
+<li>📏 Tailles : S · M · L · XL</li>
+<li>🎨 Coloris : Noir</li>
+<li>🧼 Lavage à 30°, ne pas sécher en machine</li>
+</ul>
+```
 
-**Meta titre :** `Robe Fleurie Vintage Été | KORE`
-**Meta description :** `Robe fleurie vintage, coupe fluide et imprimé floral pour l'été. Plusieurs coloris. Livraison offerte dès 80€. — KORE`
+**Meta titre :** `Ensemble Yoga Top + Short Seamless | KORE`
+**Meta description :** `Ensemble yoga 2 pièces : top court + short taille haute seamless. Livraison offerte, retours 14 jours. — KORE`
+**Prix : 39,90 €** (pas de prix barré)
 
 ---
 
-## 4) T-shirt oversize — Motif montagne
+## 4) Ensemble — Brassière + Legging Seamless
 
-**Titre :** `T-Shirt Oversize Motif Montagne`
+**Titre :** `Ensemble KORE — Brassière + Legging Sculptant Seamless`
 
 **Description :**
-> Le confort sans compromis sur le style. Le T-Shirt Oversize KORE associe une coupe
-> ample tendance à un coton doux et résistant. Son motif montagne minimaliste apporte
-> la touche graphique parfaite pour un look streetwear maîtrisé.
->
-> - 👕 **Matière :** [100 % coton — à préciser], épais et doux
-> - ✂️ **Coupe :** oversize, épaules tombantes
-> - 🎨 **Coloris :** [blanc / autres — à préciser]
-> - 📏 **Tailles :** [S à XXL — à préciser]
-> - 🧼 **Entretien :** lavage à 30°, ne pas sécher en machine
-> - 🚚 **Livraison offerte dès 80€ · Retours 30 jours**
+```html
+<p><strong>La tenue complète du premier échauffement à la dernière respiration.</strong> Brassière de maintien + legging sculptant taille haute, en maille seamless assortie.</p>
+<ul>
+<li>🍑 Effet sculptant : taille haute gainante + maintien ciblé</li>
+<li>🚫 Sans coutures : zéro frottement</li>
+<li>🤝 Coordonné : même matière, même teinte</li>
+<li>📏 Tailles : S · M · L · XL</li>
+<li>🎨 Coloris : Noir</li>
+</ul>
+<p><strong>Pourquoi l'ensemble ?</strong><br>Legging (34,90 €) + Brassière (24,90 €) = 59,80 € séparément. En ensemble : <strong>49,90 €</strong> — économie réelle de 9,90 €.</p>
+```
 
-**Meta titre :** `T-Shirt Oversize Motif Montagne | KORE`
-**Meta description :** `T-shirt oversize en coton, motif montagne minimaliste, coupe streetwear. Livraison offerte dès 80€. — KORE`
+**Meta titre :** `Ensemble Activewear Brassière + Legging Seamless | KORE`
+**Meta description :** `Ensemble activewear assorti : brassière + legging sculptant seamless. Économise 9,90 € vs achat séparé. Livraison offerte. — KORE`
+**Prix : 49,90 €** (économie réelle vs achat séparé — conforme Omnibus, pas de prix barré)
 
 ---
 
-## 🖼️ Rappel images (critique)
-Pour **chaque** produit, avant publication :
-1. Supprime toute image avec **filigrane** (« Lipswag ») ou **texte incrusté** (« 10 Colour XS-2XL »).
-2. Garde un **format identique** pour tous (carré conseillé).
-3. Vise **3 à 5 photos** : produit porté, détail matière, dos/face, mise en situation.
-4. Compresse les images (≤ 200-300 Ko) pour la vitesse mobile.
+## ⚠️ Rappel images (avant chaque publication)
+1. Supprime toute image avec **filigrane** ou texte incrusté.
+2. Garde un **format identique** pour tous les produits (carré conseillé).
+3. Vise **3 à 5 photos** : porté, détail matière, dos/face.
+4. Compresse les images (≤ 300 Ko) pour la vitesse mobile.

@@ -1,37 +1,31 @@
 # 📖 Page « À propos » — KORE
-
-Une histoire de marque crédible est l'un des plus gros leviers de confiance.
-Colle ce texte dans **Pages → Ajouter une page → « Notre histoire »**, puis lie-le au footer
-et au menu. Remplace les `[ ]` par ta vraie histoire (plus c'est sincère, plus ça vend).
+> Coller dans Pages → Ajouter une page → « Notre histoire », puis lier au footer et menu.
+> Dernière mise à jour : 2026-06-09
 
 ---
 
 ## Notre histoire
 
-Chez **KORE**, nous croyons qu'élégance ne devrait pas rimer avec prix excessif.
+Chez **KORE**, tout est parti d'un constat simple : les leggings qu'on voit partout
+coûtent trop cher, se déforment en quelques lavages, ou deviennent transparents au
+premier squat.
 
-Tout est parti d'un constat simple : trop de belles pièces sont vendues hors de prix,
-et trop de vêtements abordables ne durent qu'une saison. Nous avons voulu réconcilier
-les deux — **du style, de la qualité, à un prix juste.**
+On a voulu faire mieux — des pièces activewear qui **tiennent vraiment** : en forme, en
+opacité, dans la durée. Chaque modèle KORE est sélectionné pour sa matière, son maintien
+et son rendu sur toutes les morphologies. Si ça ne passe pas le test, ça n'entre pas dans
+la boutique.
 
-Nous sélectionnons chaque pièce avec soin : des matières agréables à porter, des coupes
-intemporelles, des détails qui font la différence. Pas de surproduction, pas de fausses
-promesses — seulement des essentiels que vous aurez plaisir à porter, été après été.
+KORE, c'est « core » — le centre, le corps, la force. Une marque féminine, sans chichis,
+pour celles qui bougent.
 
 ### Nos engagements
-- ✨ **Qualité choisie** — chaque produit est sélectionné pour sa matière et sa finition.
-- 🔄 **Achat sans risque** — 30 jours pour changer d'avis, retours simples.
-- 🔒 **Sérénité** — paiement 100 % sécurisé et service client réactif.
-- 💌 **Proximité** — une vraie équipe qui vous répond sous 24h.
-
-### Pourquoi « KORE » ?
-[Raconte l'origine du nom — ex. « KORE », du grec « le cœur, l'essentiel » : l'idée d'aller
-à l'essentiel du style. À personnaliser avec ta vraie raison.]
-
-Merci de faire partie de l'aventure.
-**— L'équipe KORE**
+- 💪 **Qualité choisie** — chaque pièce est testée avant d'être proposée.
+- 🚚 **Livraison offerte** — en France, sans minimum d'achat.
+- ↩️ **Retours 14 jours** — article neuf, on te rembourse sans question.
+- 🔒 **Paiement sécurisé** — Visa, Mastercard, Apple Pay, Shop Pay.
+- 💬 **Service client humain** — contact@korewear.fr, réponse sous 48h.
 
 ---
 
-> 💡 **Conseil crédibilité :** ajoute une photo (toi, l'équipe, un atelier, un lieu) et,
-> si tu peux, une vraie anecdote de création. Une histoire authentique > un texte parfait.
+> 💡 **Conseil** : ajoute une vraie photo (toi, un entraînement, un détail produit) —
+> une histoire authentique convertit bien mieux qu'un texte parfait.

@@ -1,29 +1,25 @@
 # 📨 Page Contact — KORE
-
-Une page contact = confiance. Crée-la via **Pages → Ajouter une page**, choisis le modèle
-**« page.contact »** (à droite, « Modèle de thème ») pour afficher le formulaire Shopify.
+> Coller dans Pages → Ajouter une page → « Contact », modèle « page.contact » (affiche le formulaire).
+> Dernière mise à jour : 2026-06-09
 
 ---
 
 ## Texte à coller
 
-### Contactez-nous
+### Contacte-nous
 
-Une question sur une commande, une taille, un délai ? Notre équipe est là pour vous.
+Une question sur ta commande, ta taille ou un délai ? On est là.
 
-📧 **E-mail :** [contact@ton-domaine.com]
-⏱️ **Délai de réponse :** sous 24h (jours ouvrés)
-📦 **Suivi de commande :** indiquez votre numéro de commande pour un traitement plus rapide
+📧 **E-mail :** contact@korewear.fr
+⏱️ **Délai de réponse :** sous 24 à 48h ouvrées
+📦 **Suivi de commande :** indique ton numéro de commande pour un traitement rapide
 
-[Téléphone / horaires — optionnel]
-[Adresse — optionnel, mais renforce la confiance]
-
-*Vous pouvez aussi nous écrire via le formulaire ci-dessous :*
+*Tu peux aussi nous écrire via le formulaire ci-dessous :*
 
 ---
 
 > ✅ **À faire en plus :**
 > - Active le **formulaire de contact** (modèle de page « contact »).
-> - Mets un **vrai e-mail pro** (pas Gmail) → *Réglages → Détails de la boutique*.
+> - Vérifie que contact@korewear.fr redirige bien vers la boîte mail d'Aïcha.
 > - Ajoute le lien « Contact » au **menu principal** et au **footer**.
-> - (Optionnel) Ajoute un **chat** (Shopify Inbox, gratuit) pour répondre en direct.
+> - (Optionnel) Ajoute **Shopify Inbox** (gratuit) pour un chat en direct.
