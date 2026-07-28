@@ -21,23 +21,22 @@
 - [x] **Paiement Shopify Payments ACTIVÉ** (Shop Pay, Visa, Mastercard) — versements
   vers compte Boursorama EUR **d'Aïcha** (confirmé précédemment, pas re-vérifié ce jour)
 - [x] **Pages légales créées + liées au footer** (vérifié précédemment, pas re-vérifié ce jour)
-- [ ] **3 fiches gardent une URL brute copiée de CJ Dropshipping** (anglais, mots-clés
-  en vrac, illisible) — signal amateur fort, à corriger en priorité :
-  - `hip-pleated-hanging-accessories-design-hip-shrinking-ankle-length-pants-back-large-hollow-out-seamless-brassiere-suit`
-  - `seamless-yoga-sport-set-fitness-women-running-leggings-short-sleeve-tops`
-  - `tie-dye-printed-yoga-pants-summer-quick-drying-fitness-shorts-sexy-high-waisted-hip-lifting-leggings-women-pants`
+- [x] **3 URLs brutes CJ Dropshipping corrigées** (redirection ancien→nouveau handle
+  activée automatiquement, aucun lien cassé) :
+  - `ensemble-seamless-kore-brassiere-legging-taille-haute`
+  - `ensemble-seamless-2-pieces-crop-top-legging-kore`
+  - `short-cycliste-tie-dye-seamless-kore`
 - [ ] **Images produits pas encore auditées ce jour** (filigrane CJ possible — à vérifier
   visuellement, l'aperçu texte ne le montre pas)
 - [ ] **Bannière/thème optimisé** (à faire sur PC — non bloquant)
 - [ ] **Trafic = 1ʳᵉ vidéo TikTok** (rôle d'Aïcha) ← le vrai levier restant
 
 ## ▶️ Prochaines étapes (ordre d'impact red team)
-1. [ ] **Renommer les 3 URLs brutes CJ** (voir liste ci-dessus) en français, propres
-2. [ ] **Auditer les images des 23 fiches** (filigrane, cohérence visuelle)
-3. [ ] **Avis** — installer Judge.me, supprimer les faux placeholders
-4. [ ] **Vérifier stocks affichés** — chiffres CJ bruts (ex: 40000, 13252) peuvent
+1. [ ] **Auditer les images des 23 fiches** (filigrane, cohérence visuelle)
+2. [ ] **Avis** — installer Judge.me, supprimer les faux placeholders
+3. [ ] **Vérifier stocks affichés** — chiffres CJ bruts (ex: 40000, 13252) peuvent
    paraître louches s'ils sont visibles publiquement
-5. [ ] **Paiement express + domaine perso**
+4. [ ] **Paiement express + domaine perso**
 
 ## ⏳ Bloquants « humains » (à préparer en parallèle — voir `guide/a-completer.md`)
 - [ ] Photos produits propres (sans filigrane)
